@@ -6,13 +6,12 @@ const correctAnswers = ["Right", "Acute", "Equilateral", "2 congruent sides", "1
 
 function calculateScore(){
     let score = 0;
-    let index = 0;
     const formData = new FormData(quizForm);
-    for (let i of formData.values()){
-        if (correctAnswers[index] === i){
+    for (let i of formData.entries()){
+        const questionNo = Number(i[0]);
+        if (correctAnswers[questionNo] === i[1]){
             score++;
         }
-        index++;
     }
     output.innerText = `Your score is ${score}.`;
 }
