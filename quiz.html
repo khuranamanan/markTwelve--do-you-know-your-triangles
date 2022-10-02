@@ -1,77 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Triangle Quiz | Fun with Triangles</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1> Triangle Quiz </h1>
-    <form id="quiz-form">
-        <div class="question-container">
-            <p>This type of triangle has one 90 degree angle.</p>
-            <label><input type="radio" name="q1" value="Acute">Acute</label>
-            <label><input type="radio" name="q1" value="Right">Right</label>
-            <label><input type="radio" name="q1" value="Obtuse">Obtuse</label>
+    <nav class="navigation">
+        <div class="container">
+            <div class="nav-brandname">Fun with Triangles</div>
+            <ul class="list-style-none nav-ul">
+                <li class="list-inline"><a href="index.html" class="links">Is Triangle?</a></li>
+                <li class="list-inline"><a href="quiz.html" class="links   link-active">Quiz</a></li>
+                <li class="list-inline"><a href="hypotenuse.html" class="links">Hypotenuse</a></li>
+                <li class="list-inline"><a href="areaoftriangle.html" class="links">Area</a></li>
+            </ul>
         </div>
-        <div class="question-container">
-            <p>A ________ triangle is one where all 3 angles measure less than 90 degrees.</p>
-            <label><input type="radio" name="q2" value="Acute">Acute</label>
-            <label><input type="radio" name="q2" value="Right">Right</label>
-            <label><input type="radio" name="q2" value="Obtuse">Obtuse</label>
+
+    </nav>
+    <div class="container">
+        <h1> Triangle Quiz </h1>
+        <p>For each Correct Answer you'll get 1 Point</p>
+        <form id="quiz-form">
+            <div class="question-container">
+                <p>This type of triangle has one 90 degree angle.</p>
+                <div class="radio-container">
+                    <label><input type="radio" name="q1" value="Acute">Acute</label>
+                    <label><input type="radio" name="q1" value="Right">Right</label>
+                    <label><input type="radio" name="q1" value="Obtuse">Obtuse</label>
+                </div>
+
+            </div>
+            <div class="question-container">
+                <p>A ________ triangle is one where all 3 angles measure less than 90 degrees.</p>
+                <div class="radio-container">
+                    <label><input type="radio" name="q2" value="Acute">Acute</label>
+                    <label><input type="radio" name="q2" value="Right">Right</label>
+                    <label><input type="radio" name="q2" value="Obtuse">Obtuse</label>
+                </div>
+
+            </div>
+            <div class="question-container">
+                <p>A triangle where all sides are congruent is called</p>
+                <div class="radio-container">
+                    <label><input type="radio" name="q3" value="Scalene">Scalene</label>
+                    <label><input type="radio" name="q3" value="Isosceles">Isosceles</label>
+                    <label><input type="radio" name="q3" value="Equilateral">Equilateral</label>
+                </div>
+
+            </div>
+            <div class="question-container">
+                <p>An isosceles triangle has</p>
+                <div class="radio-container">
+                    <label><input type="radio" name="q4" value="No congruent sides">No congruent sides</label>
+                    <label><input type="radio" name="q4" value="2 congruent sides">2 congruent sides</label>
+                    <label><input type="radio" name="q4" value="3 congruent sides">3 congruent sides</label>
+                </div>
+
+            </div>
+            <div class="question-container">
+                <p>All 3 interior angles of a triangle add up to</p>
+                <div class="radio-container">
+                    <label><input type="radio" name="q5" value="90 degrees">90 degrees</label>
+                    <label><input type="radio" name="q5" value="180 degrees">180 degrees</label>
+                    <label><input type="radio" name="q5" value="360 degrees">360 degrees</label>
+                </div>
+
+            </div>
+            <div class="question-container">
+                <p>A triangle that has no equal sides is also know as</p>
+                <div class="radio-container">
+                    <label><input type="radio" name="q6" value="Scalene">Scalene</label>
+                    <label><input type="radio" name="q6" value="Isosceles">Isosceles</label>
+                    <label><input type="radio" name="q6" value="Equilateral">Equilateral</label>
+                </div>
+
+            </div>
+            <div class="question-container">
+                <p>Area of a Triangle with base b and height h is represented by</p>
+                <div class="radio-container">
+                    <label><input type="radio" name="q7" value="2/bh">2/bh</label>
+                    <label><input type="radio" name="q7" value="1/2 x bh">1/2 x bh</label>
+                    <label><input type="radio" name="q7" value="2 x bh">2 x bh</label>
+                </div>
+
+            </div>
+            <div class="question-container">
+                <p>The perimeter of scalene triangle with sides a, b, c is</p>
+                <div class="radio-container">
+                    <label><input type="radio" name="q8" value="a + b + c">a + b + c</label>
+                    <label><input type="radio" name="q8" value="2a">2a</label>
+                    <label><input type="radio" name="q8" value="None of the above">None of the above</label>
+                </div>
+
+            </div>
+            <div class="question-container">
+                <p>There is a right triangle PQR where: angle Q = 90°; angle P = angle R. What is the measure of angles
+                    P and R?</p>
+                <div class="radio-container">
+                    <label><input type="radio" name="q9" value="45°">45°</label>
+                    <label><input type="radio" name="q9" value="90°">90°</label>
+                    <label><input type="radio" name="q9" value="85°">85°</label>
+                </div>
+
+            </div>
+            <div class="question-container">
+                <p>In a right triangle, the longest side is:</p>
+                <div class="radio-container">
+                    <label><input type="radio" name="q10" value="Perpendicular">Perpendicular</label>
+                    <label><input type="radio" name="q10" value="Hypotenuse">Hypotenuse</label>
+                    <label><input type="radio" name="q10" value="Base">Base</label>
+                </div>
+
+            </div>
+        </form>
+        <button id="btn-submit">Submit Answers</button>
+        <div id="output-answers" class="output-style"></div>
+    </div>
+    <footer class="footer">
+        <div class="container container-center">
+            <div class="footer-heading">Social Media Links</div>
+            <ul class="list-style-none">
+                <li class="list-inline">
+                    <a href="https://github.com/khuranamanan" class="link-social links">
+                        <img src="images/GitHub-Mark-Light-64px.png" alt="Github Profile Link" class="footer-img">
+                    </a>
+                </li>
+                <li class="list-inline">
+                    <a href="https://www.linkedin.com/in/manan-khurana-1b135b19b/" class="link-social links">
+                        <img src="images/LinkedIn.svg" alt="linkedIn profile link" class="footer-img">
+                    </a>
+                </li>
+                <li class="list-inline">
+                    <a href="https://twitter.com/manankhurrana" class="link-social links">
+                        <img src="images/Twitter.svg" alt="Twitter profile Link" class="footer-img">
+                    </a>
+                </li>
+            </ul>
         </div>
-        <div class="question-container">
-            <p>A triangle where all sides are congruent is called</p>
-            <label><input type="radio" name="q3" value="Scalene">Scalene</label>
-            <label><input type="radio" name="q3" value="Isosceles">Isosceles</label>
-            <label><input type="radio" name="q3" value="Equilateral">Equilateral</label>
-        </div>
-        <div class="question-container">
-            <p>An isosceles triangle has</p>
-            <label><input type="radio" name="q4" value="No congruent sides">No congruent sides</label>
-            <label><input type="radio" name="q4" value="2 congruent sides">2 congruent sides</label>
-            <label><input type="radio" name="q4" value="3 congruent sides">3 congruent sides</label>
-        </div>
-        <div class="question-container">
-            <p>All 3 interior angles of a triangle add up to</p>
-            <label><input type="radio" name="q5" value="90 degrees">90 degrees</label>
-            <label><input type="radio" name="q5" value="180 degrees">180 degrees</label>
-            <label><input type="radio" name="q5" value="360 degrees">360 degrees</label> 
-        </div>
-        <div class="question-container">
-            <p>A triangle that has no equal sides is also know as</p>
-            <label><input type="radio" name="q6" value="Scalene">Scalene</label>
-            <label><input type="radio" name="q6" value="Isosceles">Isosceles</label>
-            <label><input type="radio" name="q6" value="Equilateral">Equilateral</label>
-        </div>
-        <div class="question-container">
-            <p>Area of a Triangle with base b and height h is represented by</p>
-            <label><input type="radio" name="q7" value="2/bh">2/bh</label>
-            <label><input type="radio" name="q7" value="1/2 x bh">1/2 x bh</label>
-            <label><input type="radio" name="q7" value="2 x bh">2 x bh</label>
-        </div>
-        <div class="question-container">
-            <p>The perimeter of scalene triangle with sides a, b, c is</p>
-            <label><input type="radio" name="q8" value="a + b + c">a + b + c</label>
-            <label><input type="radio" name="q8" value="2a">2a</label>
-            <label><input type="radio" name="q8" value="None of the above">None of the above</label>
-        </div>
-        <div class="question-container">
-            <p>There is a right triangle PQR where: angle Q = 90°; angle P = angle R. What is the measure of angles P and R?</p>
-            <label><input type="radio" name="q9" value="45°">45°</label>
-            <label><input type="radio" name="q9" value="90°">90°</label>
-            <label><input type="radio" name="q9" value="85°">85°</label>
-        </div>
-        <div class="question-container">
-            <p>In a right triangle, the longest side is:</p>
-            <label><input type="radio" name="q10" value="Perpendicular">Perpendicular</label>
-            <label><input type="radio" name="q10" value="Hypotenuse">Hypotenuse</label>
-            <label><input type="radio" name="q10" value="Base">Base</label>
-        </div>
-    </form>
-    <button id="btn-submit">Submit Answers</button>
-    <div id="output-answers"></div>
+    </footer>
 </body>
 <script src="quiz.js"></script>
+
 </html>

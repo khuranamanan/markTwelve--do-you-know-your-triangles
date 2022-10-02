@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+:root {
+    --primary-color: #2BAAFF;
+    --secondary-color: #26479C;
+    --gradient: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    --dark-gray: #1f2937;
+    --off-white: #e2e8f0;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+    gap: 10px;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.navigation {
+    background: var(--gradient);
+    padding: 1rem;
+    border-radius: 0 0 1rem 1rem;
+    font-size: 1.2rem;
+}
+
+.nav-brandname{
+    color: white;
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: left;
+}
+
+.navigation .links {
+    color: white;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.nav-ul {
+    text-align: right;
+}
+
+.link-active {
+    font-weight: bold;
+}
+
+/* Footer */
+.footer{
+    padding: 1rem;
+    margin-top: 2rem;
+    background: var(--gradient);
+    border-radius: 1rem 1rem 0 0;
+    text-align: center;
+}
+
+.footer .footer-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--off-white);
+}
+
+.footer .link-social {
+    color: white;
+}
+
+.footer .footer-img {
+    width: 2rem;
+    height: auto;
+}
+
+.footer-img:hover{
+    transform: scale(1.5);
+}
+
+.links{
+    padding: .75rem;
+    text-decoration: none;
+}
+
+.list-style-none {
+    list-style: none;
+}
+
+.list-inline {
+    display: inline;
+    padding: 0 0.8rem;
+    margin: 0.5rem 0;
+}
+
+ul{
+    padding-inline-start: 0;
+}
+
+.input-style {
+    width: 50%;
+    margin: auto;
+    height: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+button{
+    width: 50%;
+    background-color: var(--secondary-color);
+    padding: 0.5rem;
+    margin: 20px auto;
+    color: white;
+    font-weight: 500;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 5rem;
+}
+
+.output-style{
+    min-height: 1.8rem;
+    padding: 00.5rem;
+    border: solid 1px var(--off-white);
+    width: 50%;
+    margin: auto;
+    font-weight: 500;
+    border-radius: 0.5rem;
+}
+
+#quiz-form{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.question-container p{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.radio-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+label{
+    margin-top: 0.5rem;
+}

@@ -1,24 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculate Area of a Triangle | Fun with Triangles</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Calculate Area of a Triangle</h1>
-    <p>Formula for Calculating Area = 1/2 (base * height)</p>
+    <nav class="navigation">
+        <div class="container">
+            <div class="nav-brandname">Fun with Triangles</div>
+            <ul class="list-style-none nav-ul">
+                <li class="list-inline"><a href="index.html" class="links">Is Triangle?</a></li>
+                <li class="list-inline"><a href="quiz.html" class="links">Quiz</a></li>
+                <li class="list-inline"><a href="hypotenuse.html" class="links">Hypotenuse</a></li>
+                <li class="list-inline"><a href="areaoftriangle.html" class="links  link-active">Area</a></li>
+            </ul>
+        </div>
 
-    <label for="side1">Enter length of the Base:</label>
-    <input type="number" id="side1" class="input-side">
+    </nav>
+    <div class="container">
+        <h1>Calculate Area of a Triangle</h1>
+        <p>Formula for Calculating Area = 1/2 (base * height)</p>
 
-    <label for="side2">Enter length of the Height:</label>
-    <input type="number" id="side2" class="input-side">
+        <label for="side1">Enter length of the Base:</label>
+        <input type="number" id="side1" class="input-side input-style">
 
-    <button id="btn-calculate">Calculate Area</button>
+        <label for="side2">Enter length of the Height:</label>
+        <input type="number" id="side2" class="input-side input-style">
 
-    <div id="output-calculate"></div>
+        <button id="btn-calculate">Calculate Area</button>
+
+        <div id="output-calculate" class="output-style"></div>
+    </div>
+    <footer class="footer">
+        <div class="container container-center">
+            <div class="footer-heading">Social Media Links</div>
+            <ul class="list-style-none">
+                <li class="list-inline">
+                    <a href="https://github.com/khuranamanan" class="link-social links">
+                        <img src="images/GitHub-Mark-Light-64px.png" alt="Github Profile Link" class="footer-img">
+                    </a>
+                </li>
+                <li class="list-inline">
+                    <a href="https://www.linkedin.com/in/manan-khurana-1b135b19b/" class="link-social links">
+                        <img src="images/LinkedIn.svg" alt="linkedIn profile link" class="footer-img">
+                    </a>
+                </li>
+                <li class="list-inline">
+                    <a href="https://twitter.com/manankhurrana" class="link-social links">
+                        <img src="images/Twitter.svg" alt="Twitter profile Link" class="footer-img">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 <script src="area.js"></script>
+
 </html>

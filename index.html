@@ -1,25 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Is this a Triangle? | Fun with Triangles</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Is this a Triangle</h1>
-    <label for="angle1">Enter the Angle 1 here:</label>
-    <input type="number" id="input-angle">
+    <nav class="navigation">
+        <div class="container">
+            <div class="nav-brandname">Fun with Triangles</div>
+            <ul class="list-style-none nav-ul">
+                <li class="list-inline"><a href="index.html" class="links   link-active">Is Triangle?</a></li>
+                <li class="list-inline"><a href="quiz.html" class="links">Quiz</a></li>
+                <li class="list-inline"><a href="hypotenuse.html" class="links">Hypotenuse</a></li>
+                <li class="list-inline"><a href="areaoftriangle.html" class="links">Area</a></li>
+            </ul>
+        </div>
 
-    <label for="angle2">Enter the Angle 2 here:</label>
-    <input type="number" id="input-angle">
+    </nav>
+    <div class="container">
+        <h1>Is this a Triangle</h1>
+        <label for="angle1">Enter the Angle 1 here:</label>
+        <input type="number" id="input-angle" class="input-style">
 
-    <label for="angle3">Enter the Angle 3 here:</label>
-    <input type="number" id="input-angle">
+        <label for="angle2">Enter the Angle 2 here:</label>
+        <input type="number" id="input-angle" class="input-style">
 
-    <button id="btn-check">is this a triangle?</button>
+        <label for="angle3">Enter the Angle 3 here:</label>
+        <input type="number" id="input-angle" class="input-style">
 
-    <div id="output-check"></div>
+        <button id="btn-check">Is this a triangle?</button>
+
+        <div id="output-check" class="output-style"></div>
+    </div>
+    <footer class="footer">
+        <div class="container container-center">
+            <div class="footer-heading">Social Media Links</div>
+            <ul class="list-style-none">
+                <li class="list-inline">
+                    <a href="https://github.com/khuranamanan" class="link-social links">
+                        <img src="images/GitHub-Mark-Light-64px.png" alt="Github Profile Link" class="footer-img">
+                    </a>
+                </li>
+                <li class="list-inline">
+                    <a href="https://www.linkedin.com/in/manan-khurana-1b135b19b/" class="link-social links">
+                        <img src="images/LinkedIn.svg" alt="linkedIn profile link" class="footer-img">
+                    </a>
+                </li>
+                <li class="list-inline">
+                    <a href="https://twitter.com/manankhurrana" class="link-social links">
+                        <img src="images/Twitter.svg" alt="Twitter profile Link" class="footer-img">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 <script src="isTriangle.js"></script>
+
 </html>
