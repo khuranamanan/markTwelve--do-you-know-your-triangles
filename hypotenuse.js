@@ -9,9 +9,17 @@ function calculateSumOfSquare(a, b) {
 }
 
 function calculateHypotenuse() {
-    sumOfSquares = calculateSumOfSquare(Number(inputA.value), Number(inputB.value));
-    const lengthOfHypotenuse = Math.sqrt(sumOfSquares);
-    output.innerText = `The length of hypotenuse is ${lengthOfHypotenuse} cm`;
+    var value1 = Number(inputA.value);
+    var value2 = Number(inputB.value);
+
+    if (value1 > 0 && value2 > 0) {
+        sumOfSquares = calculateSumOfSquare(value1, value2);
+        const lengthOfHypotenuse = Math.sqrt(sumOfSquares);
+        output.innerText = `The length of hypotenuse is ${lengthOfHypotenuse} cm`;
+    } else {
+        output.innerText = "The entered value should be greater than 0";
+    }
+
 }
 
 btnCalculate.addEventListener("click", calculateHypotenuse);
